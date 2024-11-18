@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="todo-container">
+        <div class="todo-header">
+            <h1>Todo List</h1>
+        </div>
+
+        <form class="todo-form" id="todoForm">
+            <input type="text" class="todo-input" id="todoInput" placeholder="Add new task..." required>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <div class="todo-filters">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="active">Active</button>
+            <button data-filter="completed">Completed</button>
+        </div>
+
+        <ul class="todo-list" id="todoList">
+            <!-- Todo items will be added here -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
